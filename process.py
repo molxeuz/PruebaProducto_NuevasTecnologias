@@ -48,6 +48,7 @@ def registrarRenta():
     rentas_registradas.append(renta_guardada)
     print("\n--> Renta exitosa. ")
 
+# <-----------------> Consultar renta
 def consultarRenta():
     print("--> Listado de rentas registradas \n")
     if len(rentas_registradas) == 0:
