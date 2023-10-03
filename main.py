@@ -1,10 +1,11 @@
 import os, sys, keyboard
 import process as process
 
-# Limpiar la consola    
+# <-----------------> Limpiar consola    
 def limpiarConsola():
     os.system('cls' if os.name == 'nt' else 'clear')
     
+# <-----------------> Menu de opciones
 def mostrarMenu():
     print("\n <-- Menu de opciones --> ")
     print(" 1. registro de usuario ")
@@ -13,6 +14,7 @@ def mostrarMenu():
     print(" 4. Consultar una bicicleta ")
     print(" 5. Salir \n")
     
+# <-----------------> Finalizar programa
 def finalizarPrograma():
     print("<-- Gracias por utilizar el software.")
     print("\n" + "Presiona (Ctrl) para mostrar el menú o (Shift) para salir del programa. \n")
@@ -26,6 +28,7 @@ def finalizarPrograma():
             print("\n" + "Saliendo del programa...\n")
             sys.exit()
 
+# <-----------------> Ejecutar programa 
 opcion = "0"
 while opcion != "5":
     mostrarMenu()
